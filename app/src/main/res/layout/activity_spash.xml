@@ -12,7 +12,7 @@
     android:layout_height="match_parent"
     tools:context="com.company.zixin.hardtask.SpashActivity">
 <ImageView
-    android:background="@drawable/spash"
+    android:background="@drawable/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 <Button

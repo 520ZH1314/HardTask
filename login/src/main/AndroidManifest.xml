@@ -3,6 +3,7 @@
     package="com.zixin.login">
 
     <application
+
         android:theme="@style/Theme.Design.NoActionBar">
 <activity android:name=".activity.LoginActivity">
 
@@ -10,6 +11,16 @@
         <activity android:name=".activity.RegistActivity" />
         <activity android:name=".activity.UpDatePwdActivity" />
         <activity android:name=".activity.ChoiceIdActivity"></activity>
+        <activity android:name=".activity.WritePerDataActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WriteComDataActivity">
+
+        </activity>
     </application>
 
 </manifest>

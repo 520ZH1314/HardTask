@@ -1,5 +1,5 @@
 ext {
-    isAlone = true;//false:作为集成模式存在，true:作为组件模式存在
+    isAlone = false;//false:作为集成模式存在，true:作为组件模式存在
 
     // 各个组件版本号的统一管理
     android = [
