@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="choiceIdModel"
+            type="com.zixin.login.viewmodel.activity.ChoiceIdViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login"
+        tools:context="com.zixin.login.activity.ChoiceIdActivity">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/x320"
+            android:layout_height="@dimen/y510"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginTop="@dimen/y98"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+            <!--提示-->
+            <TextView
+                android:layout_width="@dimen/x250"
+                android:layout_height="@dimen/y41"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y48"
+                android:maxLines="1"
+                android:text="注册成功！请选择您的身份"
+                android:textColor="@color/tv_choice_id"
+                android:textSize="18sp" />
+            <ScrollView
+                android:layout_marginTop="@dimen/y114"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <!--游客身份-->
+                    <LinearLayout
+                        android:id="@+id/ll_visitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y70"
+                        android:layout_marginTop="@dimen/y25"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x70"
+                            android:layout_height="@dimen/y70"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:src="@drawable/student" />
+
+                        <TextView
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y23"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:text="我是游客"
+                            android:textColor="@color/tv_choice_id" />
+
+                        <CheckBox
+                            android:id="@+id/checked_visitor"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x110" />
+                    </LinearLayout>
+                    <!--求职者-->
+                    <LinearLayout
+                        android:id="@+id/ll_job_hunter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y70"
+                        android:layout_marginTop="@dimen/y25"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x70"
+                            android:layout_height="@dimen/y70"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:src="@drawable/job_hunter" />
+
+                        <TextView
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y23"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:text="我是求职者"
+                            android:textColor="@color/tv_choice_id" />
+
+                        <CheckBox
+                            android:id="@+id/checked_job_hunter"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x110" />
+                    </LinearLayout>
+                    <!--在职员工-->
+                    <LinearLayout
+                        android:id="@+id/ll_on_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y70"
+                        android:layout_marginTop="@dimen/y25"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x70"
+                            android:layout_height="@dimen/y70"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:src="@drawable/on_job" />
+
+                        <TextView
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y23"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:text="我是在职者"
+                            android:textColor="@color/tv_choice_id" />
+
+                        <CheckBox
+                            android:id="@+id/checked_on_job"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x110" />
+                    </LinearLayout>
+                    <!--企业-->
+                    <LinearLayout
+                        android:id="@+id/ll_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y70"
+                        android:layout_marginTop="@dimen/y25"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x70"
+                            android:layout_height="@dimen/y70"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:src="@drawable/boss" />
+
+                        <TextView
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y23"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:text="我是企业"
+                            android:textColor="@color/tv_choice_id" />
+
+                        <CheckBox
+                            android:id="@+id/checked_company"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x110" />
+                    </LinearLayout>
+                    <!--学生-->
+                    <LinearLayout
+                        android:id="@+id/ll_student"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y70"
+                        android:layout_marginTop="@dimen/y25"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x70"
+                            android:layout_height="@dimen/y70"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:src="@drawable/student" />
+
+                        <TextView
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y23"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x12"
+                            android:text="我是企业"
+                            android:textColor="@color/tv_choice_id" />
+
+                        <CheckBox
+                            android:id="@+id/checked_student"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/x110" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>

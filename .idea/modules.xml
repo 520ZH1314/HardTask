@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HardTask.iml" filepath="$PROJECT_DIR$/HardTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appcontext/appcontext.iml" filepath="$PROJECT_DIR$/appcontext/appcontext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/card/card.iml" filepath="$PROJECT_DIR$/card/card.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat/chat.iml" filepath="$PROJECT_DIR$/chat/chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonlibrary/commonlibrary.iml" filepath="$PROJECT_DIR$/commonlibrary/commonlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mine/mine.iml" filepath="$PROJECT_DIR$/mine/mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/score/score.iml" filepath="$PROJECT_DIR$/score/score.iml" />
+    </modules>
+  </component>
+</project>

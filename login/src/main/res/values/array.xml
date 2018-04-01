@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="login_module_sex">
+        <item >男</item>
+        <item >女</item>
+    </string-array>
+    <string-array name="login_module_education">
+        <item >中专及以下</item>
+        <item >高中</item>
+        <item >大专</item>
+        <item >本科</item>
+        <item >硕士</item>
+        <item >博士</item>
+    </string-array>
+    <string-array name="login_module_job_all_time">
+        <item >应届生</item>
+        <item >1年以内</item>
+        <item >1-3年</item>
+        <item >3-5年</item>
+        <item >5-10年</item>
+        <item >10年以上</item>
+    </string-array>
+</resources>

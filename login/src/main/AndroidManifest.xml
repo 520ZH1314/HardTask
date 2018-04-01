@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zixin.login">
+
+    <application
+        android:theme="@style/Theme.Design.NoActionBar">
+<activity android:name=".activity.LoginActivity">
+
+</activity>
+        <activity android:name=".activity.RegistActivity" />
+        <activity android:name=".activity.UpDatePwdActivity" />
+        <activity android:name=".activity.ChoiceIdActivity"></activity>
+    </application>
+
+</manifest>

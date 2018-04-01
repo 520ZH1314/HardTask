@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    dataBinding {
+        enabled true
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.company.zixin.hardtask"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a'//, 'x86', 'x86_64', 'arm64-v8a'
+        }
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+
+        if (!rootProject.ext.isAlone) {
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    arguments = [moduleName: project.getName()]
+                }
+            }
+        }
+
+    }
+//    signingConfigs {
+//        config {
+//            keyAlias 'chen'
+//            keyPassword '3929249'
+//            storeFile file('frame.jks')
+//            storePassword '3929249'
+//        }
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    if (!rootProject.ext.isAlone) {
+        api project(':card')
+        api project(':appcontext')
+        api project(':chat')
+        api project(':login')
+        api project(':score')
+        api project(':mine')
+        annotationProcessor rootProject.ext.dependencies.arouter_compiler
+    }
+    implementation project(':commonlibrary')
+    testImplementation 'junit:junit:4.12'
+
+}

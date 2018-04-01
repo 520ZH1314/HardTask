@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+   <data>
+       <variable
+           name="registModel"
+           type="com.zixin.login.viewmodel.activity.RegistViewModel"/>
+   </data>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/login"
+    android:layout_height="match_parent"
+    tools:context="com.zixin.login.activity.RegistActivity">
+    <!--用户登录账号-->
+    <RelativeLayout
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/y49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y225"
+        android:background="@drawable/login_use"
+        android:id="@+id/relativeLayout">
+
+        <EditText
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x74"
+            android:background="@null"
+            android:hint="用户名"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+    <!--用户密码-->
+    <RelativeLayout
+
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/x49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y304"
+        android:background="@drawable/login_pwd">
+
+        <EditText
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x74"
+            android:background="@null"
+            android:hint="密码"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+    <!--验证码-->
+    <RelativeLayout
+
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/x49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y383"
+        android:background="@drawable/login_pwd">
+
+        <EditText
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x74"
+            android:background="@null"
+            android:hint="验证码"
+            android:textColorHint="@color/white" />
+        <Button
+            android:id="@+id/btn_personal_regist_code"
+            android:background="#3399cc"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="验证码"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y40" />
+    </RelativeLayout>
+    <!--注册按钮-->
+    <Button
+        android:id="@+id/btn_personal_regist"
+        android:text="注册"
+        android:background="#3399cc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y473"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/x49" />
+</RelativeLayout>
+</layout>
