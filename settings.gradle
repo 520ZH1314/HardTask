@@ -1,1 +1,1 @@
-include ':app', ':commonlibrary', ':card', ':chat', ':appcontext', ':score', ':mine', ':login'
+include ':app', ':commonlibrary', ':card', ':chat', ':appcontext', ':score', ':mine', ':login', ':main', ':IMLib', ':IMKit'

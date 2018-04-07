@@ -13,8 +13,8 @@
         <item >博士</item>
     </string-array>
     <string-array name="login_module_job_all_time">
+        <item >在校生</item>
         <item >应届生</item>
-        <item >1年以内</item>
         <item >1-3年</item>
         <item >3-5年</item>
         <item >5-10年</item>

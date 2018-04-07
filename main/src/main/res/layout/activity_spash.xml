@@ -3,7 +3,7 @@
    <data>
        <variable
            name="spashModel"
-           type="com.company.zixin.hardtask.SpashActivityViewModel"/>
+           type="com.zixin.main.viewModel.SpashViewModel"/>
    </data>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,9 +16,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 <Button
+  app:onClickCommand="@{spashModel.jumpAdTime}"
     android:layout_margin="5dp"
     android:background="@color/white"
-    android:text="跳(3)过"
+    android:text="@={spashModel.SpashDate}"
     android:layout_alignParentRight="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />

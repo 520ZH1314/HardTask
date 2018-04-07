@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zixin.login">
-
     <application
         android:name="com.company.zixin.commonlibrary.base.BaseApplication"
         android:theme="@style/Theme.Design.Light.NoActionBar">
@@ -9,7 +8,6 @@
         <activity android:name=".activity.RegistActivity" />
         <activity android:name=".activity.UpDatePwdActivity" />
         <activity android:name=".activity.ChoiceIdActivity">
-
         </activity>
         <activity android:name=".activity.WritePerDataActivity" >
             <intent-filter>
@@ -19,8 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.WriteComDataActivity">
-
         </activity>
     </application>
-
 </manifest>

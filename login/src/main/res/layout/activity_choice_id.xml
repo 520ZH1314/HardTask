@@ -47,6 +47,7 @@
 
                     <!--游客身份-->
                     <LinearLayout
+
                         android:id="@+id/ll_visitor"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/y70"
@@ -68,6 +69,7 @@
                             android:textColor="@color/tv_choice_id" />
 
                         <CheckBox
+
                             android:id="@+id/checked_visitor"
                             android:layout_width="@dimen/x30"
                             android:layout_height="@dimen/y30"
@@ -180,7 +182,7 @@
                             android:layout_height="@dimen/y23"
                             android:layout_gravity="center"
                             android:layout_marginLeft="@dimen/x12"
-                            android:text="我是企业"
+                            android:text="我是学生"
                             android:textColor="@color/tv_choice_id" />
 
                         <CheckBox

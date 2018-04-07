@@ -39,7 +39,7 @@ public class UpDatePwdActivity extends MyBaseActivity<ActivityUpDatePwdBinding,U
 
     @Override
     public UpDatePwdViewModel initViewModel() {
-        return new UpDatePwdViewModel();
+        return new UpDatePwdViewModel(this);
     }
 
     //初始化一些自定义组件

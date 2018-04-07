@@ -4,6 +4,7 @@ package com.company.zixin.commonlibrary.base;//
 //
 
 
+import android.app.Activity;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
@@ -19,11 +20,18 @@ import me.goldze.mvvmhabit.bus.Messenger;
 public abstract class MyBaseActivity<V extends ViewDataBinding, VM extends BaseViewModel> extends RxAppCompatActivity implements IBaseActivity {
     protected V binding;
     protected VM viewModel;
-
+    private BaseApplication application;
+    private MyBaseActivity oContext;
     public MyBaseActivity() {}
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (application == null) {
+            // 得到Application对象
+            application = BaseApplication.getInstance();
+        }
+        oContext = this;// 把当前的上下文对象赋值给BaseActivity
+        addActivity(oContext);// 调用添加方法
         this.initParam();
         this.initViewDataBinding();
         this.initData();
@@ -77,6 +85,17 @@ public abstract class MyBaseActivity<V extends ViewDataBinding, VM extends BaseV
             }
         });
     }
+    public void addActivity(Activity act) {
+       application.addActivity(act);
 
+    }
+
+    public void removeActivity(Activity act) {
+        application.removeActivity(act);
+    }
+
+    public void exitApp() {
+      application.exitApp();
+    }
 
 }

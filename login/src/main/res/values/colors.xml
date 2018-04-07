@@ -3,14 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="radio_button_text_pressed">#FF8200</color>
     <color name="regist_radio_button_text_pressed">#333333</color>
     <color name="home_ad">#333333</color>
     <color name="nomal_text">#999999</color>
    <color name="login_xian">#D2D2D2</color>
     <color name="login_jingshi">#DC1E00</color>
     <color name="login_btn_text">#FFFFFF</color>
-    <color name="login_go_regist">#FF8200</color>
     <color name="regist_divider">#cccccc</color>
     <color name="withDrawBankNum">#1d66ea</color>
     <color name="withDrawBankText">#666666</color>

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zixin.login">
-
     <application
-
-        android:theme="@style/Theme.Design.NoActionBar">
-<activity android:name=".activity.LoginActivity">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+             <activity android:name=".activity.LoginActivity">
 
 </activity>
-        <activity android:name=".activity.RegistActivity" />
-        <activity android:name=".activity.UpDatePwdActivity" />
-        <activity android:name=".activity.ChoiceIdActivity"></activity>
-        <activity android:name=".activity.WritePerDataActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <activity android:name=".activity.RegistActivity"/>
+             <activity android:name=".activity.UpDatePwdActivity"/>
+             <activity android:name=".activity.ChoiceIdActivity">
         </activity>
-        <activity android:name=".activity.WriteComDataActivity">
+             <activity android:name=".activity.WritePerDataActivity" >
+
+        </activity>
+             <activity android:name=".activity.WriteComDataActivity">
 
         </activity>
     </application>

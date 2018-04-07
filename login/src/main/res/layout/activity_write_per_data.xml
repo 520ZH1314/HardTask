@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-
     <data>
-
         <variable
             name="writePerModel"
             type="com.zixin.login.viewmodel.activity.WritePerViewModel" />
@@ -42,8 +40,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x29"
-
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x26"
@@ -53,7 +51,8 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:layout_width="@dimen/x200"
+                    android:layout_weight="6"
+                    android:layout_width="0dip"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x40"
                     android:layout_marginRight="@dimen/x25"
@@ -72,8 +71,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x29"
-
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x26"
@@ -83,19 +82,19 @@
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="@dimen/x200"
+                    android:layout_weight="6"
+                    android:layout_width="0dip"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x40"
                     android:layout_marginRight="@dimen/x25"
                     android:background="@drawable/linerlayout_underline">
 
                     <org.angmarch.views.NiceSpinner
-
+                        android:textAlignment="center"
                         spinnerData="@{writePerModel.mSexData}"
                         android:id="@+id/login_sex_data"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
                         android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -107,18 +106,19 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x57"
-
+                    android:layout_width="0dip"
+                    android:layout_weight="2"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginLeft="@dimen/x23"
 
                     android:text="出生年月"
                     android:textColor="@color/tv_choice_id"
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="@dimen/x200"
+                    android:layout_weight="6"
+                    android:layout_width="0dip"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x12"
                     android:layout_marginRight="@dimen/x25"
@@ -155,8 +155,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x29"
-
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x26"
@@ -166,7 +166,8 @@
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="@dimen/x200"
+                    android:layout_width="0dip"
+                    android:layout_weight="6"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x40"
                     android:layout_marginRight="@dimen/x25"
@@ -189,7 +190,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x29"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
 
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
@@ -200,7 +202,8 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:layout_width="@dimen/x200"
+                    android:layout_width="0dip"
+                    android:layout_weight="6"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x40"
                     android:layout_marginRight="@dimen/x25"
@@ -219,8 +222,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x57"
-
+                    android:layout_width="0dip"
+                      android:layout_weight="2"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x26"
@@ -230,9 +233,10 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:layout_width="@dimen/x200"
+                    android:layout_weight="6"
+                    android:layout_width="0dip"
                     android:layout_height="@dimen/y40"
-                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginLeft="@dimen/x10"
                     android:layout_marginRight="@dimen/x25"
                     android:background="@drawable/underline"
                     android:gravity="center"
@@ -249,7 +253,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x57"
+                    android:layout_width="0dip"
+                    android:layout_weight="2"
 
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
@@ -260,9 +265,10 @@
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="@dimen/x200"
+                    android:layout_width="0dip"
+                    android:layout_weight="6"
                     android:layout_height="@dimen/y40"
-                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginLeft="@dimen/x10"
                     android:layout_marginRight="@dimen/x25"
                     android:background="@drawable/linerlayout_underline">
 
@@ -283,7 +289,8 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="@dimen/x29"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
                     android:layout_height="@dimen/y23"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/x26"
@@ -292,7 +299,8 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:layout_width="@dimen/x200"
+                    android:layout_width="0dip"
+                    android:layout_weight="6"
                     android:layout_height="@dimen/y40"
                     android:layout_marginLeft="@dimen/x40"
                     android:layout_marginRight="@dimen/x25"
@@ -305,14 +313,35 @@
             </LinearLayout>
          
             <!--button-->
-            <Button
-                android:id="@+id/login_wr_per_data"
-                android:text="提交"
-                android:textColor="@color/white"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/y446"
-                android:layout_width="@dimen/x80"
-                android:layout_height="@dimen/y35" />
+          <LinearLayout
+              android:layout_marginTop="@dimen/y446"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <LinearLayout
+                 android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                  <Button
+                      android:id="@+id/login_wr_per_data"
+                      android:text="提交"
+                      android:textColor="@color/white"
+
+
+                      android:layout_width="@dimen/x80"
+                      android:layout_height="@dimen/y37" />
+                  <Button
+                      android:id="@+id/login_miss_wr_per_data"
+                      android:text="跳过"
+                      android:textColor="@color/white"
+                      android:layout_gravity="center_horizontal"
+
+                      android:layout_width="@dimen/x80"
+                      android:layout_height="@dimen/y37" />
+              </LinearLayout>
+
+          </LinearLayout>
         </android.support.v7.widget.CardView>
     </RelativeLayout>
 </layout>
