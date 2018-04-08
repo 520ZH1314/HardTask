@@ -30,7 +30,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             // 设置支持的SO库架构
-            abiFilters 'armeabi', 'armeabi-v7a'//, 'x86', 'x86_64', 'arm64-v8a'
+            abiFilters 'armeabi', 'armeabi-v7a','x86'//, 'x86', 'x86_64', 'arm64-v8a'
         }
         if (!rootProject.ext.isAlone) {
             javaCompileOptions {
@@ -77,60 +77,88 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     implementation project(':commonlibrary')
 
-//    implementation ('cn.bmob.android:bmob-push:1.0.0'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
-//    implementation ('com.zhy:okhttputils:2.6.2'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
-//    implementation ('com.github.chrisbanes.photoview:library:1.2.4'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
-//
-//    implementation ('com.komi.slider:slider:0.4.0'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
-//    implementation ('com.mabeijianxi:small-video-record:1.2.0'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
-//    implementation ('com.github.chihane:JDAddressSelector:1.1.4'){
-//        exclude module: "support-v4"
-//        exclude module: "support-compat"
-//
-//    }
+    //    implementation ('cn.bmob.android:bmob-push:1.0.0'){
 
+    //        exclude module: "support-v4"
 
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
+
+    //    implementation ('com.zhy:okhttputils:2.6.2'){
+
+    //        exclude module: "support-v4"
+
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
+
+    //    implementation ('com.github.chrisbanes.photoview:library:1.2.4'){
+
+    //        exclude module: "support-v4"
+
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
+
+    //
+
+    //    implementation ('com.komi.slider:slider:0.4.0'){
+
+    //        exclude module: "support-v4"
+
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
+
+    //    implementation ('com.mabeijianxi:small-video-record:1.2.0'){
+
+    //        exclude module: "support-v4"
+
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
+
+    //    implementation ('com.github.chihane:JDAddressSelector:1.1.4'){
+
+    //        exclude module: "support-v4"
+
+    //        exclude module: "support-compat"
+
+    //
+
+    //    }
     implementation(rootProject.ext.dependencies.cardview) {
         exclude module: "support-v4"
         exclude module: "support-compat"
         exclude module: "support-compat"
 
     }
-
-
-
-
     if (!rootProject.ext.isAlone) {
         annotationProcessor rootProject.ext.dependencies.arouter_compiler
     }
     testImplementation 'junit:junit:4.12'
-//    implementation files('libs/pldroid-player-1.5.0.jar')
 
-//    compile files('libs/nineoldandroids-2.4.0.jar')
-//    compile files('libs/pinyin4j-2.5.0.jar')
+    //    implementation files('libs/pldroid-player-1.5.0.jar')
 
+    //    compile files('libs/nineoldandroids-2.4.0.jar')
+
+    //    compile files('libs/pinyin4j-2.5.0.jar')
+    implementation files('libs/MiPush_SDK_Client_3_5_1.jar')
+    implementation files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    implementation files('libs/AMap_Channel_Location_V1.4.0_20160708.jar')
+    implementation files('libs/AMap_Search_V3.4.0_20160811.jar')
 }
 

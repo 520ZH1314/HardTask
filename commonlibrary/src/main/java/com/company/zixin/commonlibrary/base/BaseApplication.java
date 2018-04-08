@@ -9,6 +9,8 @@ import com.luliang.shapeutils.DevShapeUtils;
 import java.util.HashSet;
 import java.util.Set;
 
+import io.rong.imkit.RongIM;
+
 
 /**
  * Created by COOTEK on 2017/7/28.
@@ -69,6 +71,7 @@ public class BaseApplication extends me.goldze.mvvmhabit.base.BaseApplication {
         ARouter.openLog();     // 打印日志
         ARouter.openDebug();
         ARouter.init(this);
+        RongIM.init(this);
         DevShapeUtils.init(this);
 
     }

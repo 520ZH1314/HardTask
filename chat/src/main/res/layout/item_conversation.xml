@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    <variable
+        name="item_conViewModel"
+        type="com.zixin.chat.viewModel.ConverstaionItemViewModel">
+    </variable>
+</data>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y80">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/conver_item_user_img"
+          android:layout_marginTop="@dimen/y10"
+          android:layout_marginLeft="@dimen/x12"
+          android:layout_width="@dimen/x60"
+          app:civ_border_width="5dp"
+          app:civ_border_color="#33FFFFFF"
+          android:layout_height="@dimen/y60" />
+       <TextView
+           android:id="@+id/item_conver_user_name"
+           android:layout_marginTop="@dimen/y17"
+           android:layout_marginLeft="@dimen/x12"
+           android:layout_toRightOf="@+id/conver_item_user_img"
+           android:layout_width="wrap_content"
+           android:layout_height="@dimen/y23" />
+      <TextView
+          android:layout_marginLeft="@dimen/x84"
+          android:layout_below="@+id/item_conver_user_name"
+          android:layout_width="@dimen/x217"
+          android:layout_height="@dimen/y23" />
+      <TextView
+          android:layout_marginTop="@dimen/y17"
+          android:layout_marginLeft="@dimen/x234"
+          android:layout_alignLeft="@+id/item_conver_user_name"
+          android:layout_width="@dimen/x48"
+          android:layout_height="@dimen/y23" />
+  </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+</layout>

@@ -106,6 +106,8 @@ dependencies {
 //    implementation rootProject.ext.dependencies.multidex
     api rootProject.ext.dependencies.arouter_api
     api 'com.github.goldze:MVVMHabit:1.2.6.1'
+    api project(':IMLib')
+    api project(':IMKit')
     api rootProject.ext.dependencies.cardview
     compile 'com.github.LiangLuDev:DevShapeUtils:1.0.1'
     compile 'de.hdodenhof:circleimageview:2.2.0'
